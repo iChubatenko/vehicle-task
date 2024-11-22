@@ -58,7 +58,7 @@ Use `Math.round()` to round floating-point numbers accurately.
 
 ## Vehicle Creation Logic
 
-The VehicleCreator class creates Car and Train objects from text input.
+The `VehicleCreator` class creates `Car` and `Train` objects from text input.
 
 The input is a comma-separated values string.
 - For `Car`: `"Car,make,model,speed,modelYear"`. Example: `"Car,Toyota,Corolla,140,1966"`
@@ -74,6 +74,9 @@ The `VehicleCreator` should handle these errors:
 
 It should throw `IllegalArgumentException` in these cases.
 
+`VehicleCreator` class must be created in `com.epam.vehicle.logic`, with a single method:
+`public Vehicle createVehicle(String input)`
+
 
 # VehiclesCollection
 
@@ -88,10 +91,14 @@ The `VehiclesCollection` class manages a collection of vehicles. It provides met
 When implementing the `getVehicle` and `getCarsWhereModelYearIsBeforeSortedBySpeed` methods,
 please utilize the stream API and lambda expressions if you are familiar with them.
 
+`VehiclesCollection` class must be created in `com.epam.vehicle.logic`
+
+
 # Instructions
+
 1. Implement the `Vehicle`, `Car`, and `Train` following the provided specifications.
-3. Develop the `VehicleCreator` class to create `Car` and `Train` objects from text inputs.
-4. Implement the `VehiclesCollection` class to oversee the vehicle collection and offer the necessary functions.
+2. Develop the `VehicleCreator` class to create `Car` and `Train` objects from text inputs.
+3. Implement the `VehiclesCollection` class to oversee the vehicle collection and offer the necessary functions.
 
 The Application class showcases the main functionalities and can be used to run the application.
 
