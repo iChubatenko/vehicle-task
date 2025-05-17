@@ -1,2 +1,29 @@
-target
-.idea
+# ========== ОС: macOS ==========
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ========== IntelliJ IDEA ==========
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+gen/
+*.log
+
+# ========== Java ==========
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+
+# ========== Maven ==========
+.mvn/
+!**/src/main/**/.gitkeep
+!**/src/test/**/.gitkeep
